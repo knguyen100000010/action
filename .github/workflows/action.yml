@@ -4,6 +4,8 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
+      - name: Check out repository code
+        uses: actions/checkout@v2
       - run: ls
       - name: Upload new version of Satellite Config
         uses: knguyen100000010/satellite-config-upload-action@v1.0.1
