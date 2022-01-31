@@ -13,5 +13,5 @@ jobs:
           apikey: ${{ secrets.MY_NAME }}
           filename: 'test-job.yml'
           channelUuid: ${{ secrets.MY_AGE }}
-          versionName: 'version-123'
+          versionName: 'version-1234'
 
