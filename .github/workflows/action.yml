@@ -8,9 +8,10 @@ jobs:
         uses: actions/checkout@v2
       - run: ls
       - name: Upload new version of Satellite Config
-        uses: knguyen100000010/satellite-config-upload-action@v1.0.1
+        uses: knguyen100000010/satellite-config-upload-action@improvement
         with:
-          # apikey: ${{ secrets.MY_NAME }}
-          # filename: 'test-job.yml'
+          apikey: ${{ secrets.MY_NAME }}
+          filename: 'test-job.yml'
           channelUuid: ${{ secrets.MY_AGE }}
           versionName: 'version-1'
+
