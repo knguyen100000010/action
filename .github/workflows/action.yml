@@ -11,6 +11,6 @@ jobs:
         uses: knguyen100000010/satellite-config-upload-action@v1.0.1
         with:
           apikey: ${{ secrets.MY_NAME }}
-          filename: 'test-job.yml'
+          # filename: 'test-job.yml'
           channelUuid: ${{ secrets.MY_AGE }}
           versionName: 'version-1'
