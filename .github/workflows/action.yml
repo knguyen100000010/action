@@ -7,11 +7,11 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v2
       - run: ls
-      - name: Upload new version of Satellite Config
-        uses: knguyen100000010/satellite-config-upload-action@improvement
+      - name: Satellite file upload
+        uses: IBM/satellite-config-upload-action@v1.0.1
         with:
           apikey: ${{ secrets.MY_NAME }}
           filename: 'test-job.yml'
           channelUuid: ${{ secrets.MY_AGE }}
-          versionName: 'version-12356'
+          versionName: 'version-12356789'
 
